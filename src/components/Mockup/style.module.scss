@@ -1,0 +1,75 @@
+.main {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .cursor,
+  .cursorLabel {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(139, 139, 125);
+    color: white;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    pointer-events: none;
+  }
+
+  .cursorLabel {
+    background-color: transparent;
+  }
+
+  .content {
+    align-items: flex-start;
+    transform: scale(1);
+    transition: transform 0.3s;
+    border-radius: 25px;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      margin-left: 20px;
+
+      .h3Inline {
+        display: inline;
+        span {
+          border: 2px solid white;
+          border-radius: 25px;
+          margin-right: 1vw;
+          padding: 0.5rem;
+        }
+      }
+      h2,
+      h4 {
+        margin: 0;
+        padding: 0.25vh;
+      }
+
+      @media (max-width: 768px) {
+        /* Adjust styles for smaller screens */
+        .img {
+          transform: translateZ(
+            0
+          ); /* or any other desired behavior for smaller screens */
+          box-shadow: none; /* Optional: Remove box-shadow on smaller screens */
+        }
+
+        .text {
+          margin-left: 0; /* Adjust margin for smaller screens */
+          align-items: center; /* Center align text on smaller screens */
+        }
+      }
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

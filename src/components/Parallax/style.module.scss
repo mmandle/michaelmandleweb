@@ -1,0 +1,19 @@
+.main_container {
+  width: 100%;
+  background-color: #06141d;
+
+  .text_container {
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    line-height: 1.5;
+
+    & > * + * {
+      margin-top: 1rem;
+    }
+
+    color: #ccc;
+  }
+}
