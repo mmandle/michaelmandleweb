@@ -1,3 +1,4 @@
+'/* eslint-disable react/jsx-filename-extension */'
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap';
 
