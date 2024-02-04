@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./style.module.scss";
 
 export default function index() {
@@ -6,12 +7,12 @@ export default function index() {
     <div id="work" className={styles.main}>
 
       <div className={styles.content}>
-        <img
+        <Image
         
           className={styles.img}
           src={`/images/comp.png`}
-          width={"1000px"}
-          height={"auto"}
+          width={1000}
+          height={600}
           alt="image"
           draggable="false"
         />

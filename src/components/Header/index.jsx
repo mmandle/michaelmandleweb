@@ -12,15 +12,17 @@ import Link from 'next/link';
 import About from "../About";
 import Contact from "../Contact-Page";
 
-export default function index() {
+export default function Index() {
     const header = useRef(null);
     const [isActive, setIsActive] = useState(false);
     const pathname = usePathname();
     const button = useRef(null);
 
     useEffect( () => {
-      if(isActive) setIsActive(false)
-    }, [pathname])
+      if(isActive) {
+        setIsActive(false)
+      }
+    }, [pathname, isActive])
 
     useLayoutEffect( () => {
         gsap.registerPlugin(ScrollTrigger)

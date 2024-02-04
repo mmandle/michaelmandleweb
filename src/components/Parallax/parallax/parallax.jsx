@@ -20,7 +20,7 @@ export default function Parallax() {
         style={{ y: textY }}
         className={styles.large_heading}
       >
-        hello, i'm michael.
+        hello, im michael.
       </motion.h1>
 
       <motion.div

@@ -27,7 +27,7 @@ export default function Home() {
                             src={`/images/self.jpeg`}
                             />
                         </div> */}
-            <h2>Let's talk.</h2>
+            <h2>Lets talk.</h2>
           </span>
           {/* <h2>together.</h2> */}
           <motion.div style={{ x }} className={styles.buttonContainer}>
