@@ -11,7 +11,7 @@ export default function index() {
         
           className={styles.img}
           src={`/images/comp.png`}
-          width={1000}
+          width={1200}
           height={600}
           alt="image"
           draggable="false"
