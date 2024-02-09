@@ -35,7 +35,7 @@ export default function Parallax() {
       <div
         className={styles.bottom_image}
         style={{
-          backgroundImage: `url(/images/image-bottom.png)`,
+          backgroundImage: `url(/images/HeroBottom.png)`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
         }}

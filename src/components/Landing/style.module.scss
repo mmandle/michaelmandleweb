@@ -2,11 +2,7 @@
   position: relative;
   display: flex;
   height: 100vh;
-  padding-bottom: 0rem;
-
-  // img {
-  //   object-fit: cover;
-  // }
+  padding-bottom: 20vh;
 
   .sliderContainer {
     position: absolute;
@@ -20,11 +16,11 @@
 
   .slider p {
     position: relative;
-    margin: 0px;
-    color: rgb(139,139,125);
-    font-size: 10rem;
+    margin: 0rem;
+    color: rgb(139, 139, 125);
+    font-size: 15vw;
     font-weight: 500;
-    padding-right: 50px;
+    padding-right: 2rem;
   }
 
   .slider p:nth-of-type(2) {
@@ -35,26 +31,22 @@
 
   .descriptionContainer {
     position: absolute;
-    top: 40vh;
+    top: 50vh;
   }
 
+  @media (max-width: 800px) {
+    .slider p {
+      position: relative;
+      margin: 0rem;
+      color: rgb(139, 139, 125);
+      font-size: 17vw;
+      font-weight: 500;
+      padding-right: 2rem;
+    }
 
-
-
-  // .description {
-  //   position: absolute;
-  //   top: 35%;
-  //   left: 65%;
-  //   color: white;
-  //   font-size: 24px;
-  //   font-weight: 300;
-  //   p {
-  //     margin: 0px;
-  //     margin-bottom: 10px;
-  //   }
-  //   svg {
-  //     transform: scale(2);
-  //     margin-bottom: 100px;
-  //   }
-  // }
+    .descriptionContainer {
+      position: absolute;
+      top: 40vh;
+    }
+  }
 }

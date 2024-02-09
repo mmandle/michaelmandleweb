@@ -9,7 +9,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Rounded from '../../common/RoundedButton';
 import Magnetic from '../../common/Magnetic';
 import Link from 'next/link';
-import About from "../About";
+import About from "../About-Page";
 import Contact from "../Contact-Page";
 
 export default function Index() {

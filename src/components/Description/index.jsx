@@ -19,12 +19,6 @@ export default function Index() {
                     })
                 }
                 </p>
-                {/* <motion.p variants={opacity} animate={isInView ? "open" : "closed"}></motion.p> */}
-                <div data-scroll data-scroll-speed={0.1}>
-                    <Rounded className={styles.button} backgroundColor={"rgb(109, 109, 95)"}>
-                        <h1>About me</h1>
-                    </Rounded>
-                </div>
             </div>
         </div>
     )

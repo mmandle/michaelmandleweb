@@ -55,7 +55,7 @@ export default function Index() {
 
     return (
         <div ref={container} className={styles.slidingImages}>
-            <h1 className={styles.tools}>My Tools.</h1>
+            {/* <h1 className={styles.tools}>My Tools.</h1>
             <motion.div style={{x: x1}} className={styles.slider}>
                     {
                         slider1.map( (project, index) => {
@@ -89,7 +89,11 @@ export default function Index() {
                             </div>
                         })
                     }
-                </motion.div>
+                </motion.div> */}
+                <div className={styles.text}>
+                    About Me.
+                </div>
+
                 <motion.div style={{height}} className={styles.circleContainer}>
                     <div className={styles.circle}></div>
                 </motion.div>

@@ -10,6 +10,7 @@ import SlidingImages from '../components/SlidingImages';
 import Contact from '../components/Contact-Footer';
 import Mockup from '../components/Mockup';
 import Cursor from '@/common/Cursor/Cursor';
+import AboutFooter from '@/components/About-Footer';
 
 import Parallax from '../components/Parallax'
 
@@ -41,10 +42,10 @@ export default function Home() {
       </AnimatePresence>
       <Parallax />
       <Landing />
-      {/* <Description /> */}
       <Mockup />
       <Projects />
       <SlidingImages />
+      {/* <AboutFooter /> */}
       <Contact />
     </main>
   )

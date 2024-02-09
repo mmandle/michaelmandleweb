@@ -25,7 +25,7 @@ export default function Home() {
     gsap.set(firstText.current, { xPercent: xPercent.current });
     gsap.set(secondText.current, { xPercent: xPercent.current });
     requestAnimationFrame(animate);
-    xPercent.current += 0.1 * directionRef.current;
+    xPercent.current += .1 * directionRef.current;
   }, []);
 
   useEffect(() => {
@@ -33,26 +33,20 @@ export default function Home() {
     gsap.to(slider.current, {
       scrollTrigger: {
         trigger: document.documentElement,
-        scrub: 0.25,
+        scrub: .25,
         start: 0,
-        end: window.innerHeight,
+        end: window.innerHeight + 600,
         onUpdate: (e) => {
           directionRef.current = e.direction * -1;
         },
       },
-      x: '-500px',
+      x: '-300px',
     });
     requestAnimationFrame(animate);
   }, [animate]);
 
   return (
     <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
-      {/* <Image 
-        src="/images/background1.jpeg"
-        fill={true}
-        alt="background"
-        draggable="false"
-      /> */}
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Website Developer -</p>
