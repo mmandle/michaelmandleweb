@@ -91,7 +91,7 @@ export default function Index() {
                     }
                 </motion.div> */}
                 <div className={styles.text}>
-                    About Me.
+                    Want to work together?
                 </div>
 
                 <motion.div style={{height}} className={styles.circleContainer}>

@@ -89,7 +89,7 @@ export default function Home() {
       }
     </div>
     <Rounded>
-      <p>More work</p>
+      <p>About Me.</p>
     </Rounded>
 
     <>

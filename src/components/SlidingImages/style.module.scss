@@ -8,7 +8,9 @@
     z-index: 1;
 
     .text {
-        font-size: 15vw;
+        font-size: 10vw;
+        text-align: center;
+        color: white;
     }
 
     .tools {
@@ -17,34 +19,33 @@
         font-size: 10rem;
     }
 
-    .slider{
-        display: flex;
-        position: relative;
-        gap: 3vw;
-        width: 120vw;
-        left: -10vw;
-        .project{
-            width: 25%;
-            height: 20vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .imageContainer{
-                position: relative;
-                width: 90%;
-                height: 90%;
-                img{
-                    object-fit: contain;
-                }
-            }
-        }
-    }
+    // .slider{
+    //     display: flex;
+    //     position: relative;
+    //     gap: 3vw;
+    //     width: 120vw;
+    //     left: -10vw;
+    //     .project{
+    //         width: 25%;
+    //         height: 20vw;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         .imageContainer{
+    //             position: relative;
+    //             width: 90%;
+    //             height: 90%;
+    //             img{
+    //                 object-fit: contain;
+    //             }
+    //         }
+    //     }
+    // }
     .circleContainer{
-        background-color: red;
         position: relative;
-        margin-top: 100px;
+        margin-top: 70vh;
         .circle{
-            height: 1550%;
+            height: 5vh;
             width: 120%;
             left: -10%;
             border-radius: 0 0 50% 50%;
@@ -55,11 +56,5 @@
         }
     }
 
-        
-    @media (max-width: 1250px) {
-        .tools {
-            font-size: 5rem;
-        }
-    }
 
 }
