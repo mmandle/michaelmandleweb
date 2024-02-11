@@ -6,7 +6,7 @@ import Rounded from '../../common/RoundedButton';
 
 export default function Index() {
 
-    const phrase = "I partner closely with clients to realize their visions through immersive and innovative design, providing creative solutions for complex challenges.";
+    const phrase = "I partner closely with clients to unlock their visions through immersive and innovative design, providing creative solutions for complex problems.";
     const description = useRef(null);
     const isInView = useInView(description)
     return (

@@ -16,8 +16,15 @@
     }
 
     p{
+        font-size: 1.5vw;
         transition: all 0.4s;
         font-weight: 300;
+    }
+
+    @media (max-width: 800px) {
+        p {
+            font-size: 2vw;
+        }
     }
 
     &:last-of-type{

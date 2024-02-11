@@ -8,21 +8,16 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Rounded from '../../common/RoundedButton';
 import Magnetic from '../../common/Magnetic';
-import Link from 'next/link';
-import About from "../About-Page";
-import Contact from "../Contact-Page";
 
-export default function Index() {
+export default function index() {
     const header = useRef(null);
     const [isActive, setIsActive] = useState(false);
     const pathname = usePathname();
     const button = useRef(null);
 
     useEffect( () => {
-      if(isActive) {
-        setIsActive(false)
-      }
-    }, [pathname, isActive])
+      if(isActive) setIsActive(false)
+    }, [pathname])
 
     useLayoutEffect( () => {
         gsap.registerPlugin(ScrollTrigger)
@@ -51,26 +46,26 @@ export default function Index() {
             <div className={styles.nav}>
                 <Magnetic>
                     <div className={styles.el}>
-                        <a href='#work'>Work</a>
+                        <a>Work</a>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>
                 <Magnetic>
                     <div className={styles.el}>
-                        <Link href="../About/index">About</Link>
+                        <a>About</a>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>
                 <Magnetic>
                     <div className={styles.el}>
-                        <Link href="">Contact</Link>
+                        <a>Contact</a>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>
             </div>
         </div>
         <div ref={button} className={styles.headerButtonContainer}>
-            <Rounded  backgroundColor={"rgb(109, 109, 95)"} onClick={() => {setIsActive(!isActive)}} className={`${styles.button}`}>
+            <Rounded onClick={() => {setIsActive(!isActive)}} className={`${styles.button}`}>
                 <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
             </Rounded>
         </div>

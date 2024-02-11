@@ -14,17 +14,17 @@ const projects = [
     color: "#000000"
   },
   {
-    title: "Bland Co. Clothing",
+    title: "SimpliciTee",
     src: "comp.png",
     color: "#8C8C8C"
   },
   {
-    title: "Commerce Management",
+    title: "Creatives Managment",
     src: "comp.png",
     color: "#EFE8D3"
   },
   {
-    title: "Tempest",
+    title: "ProFlix Entertainment",
     src: "comp.png",
     color: "#706D63"
   }
