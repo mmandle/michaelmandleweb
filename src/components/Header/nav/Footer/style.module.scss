@@ -2,6 +2,44 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    font-size: 12px;
-    gap: 40px;
+
+    div {
+        font-size: 15px;
+        display: flex;
+        gap: 10px;
+        align-items: flex-end;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 0;
+            padding: 2.5px;
+            cursor: pointer;
+        }
+
+        p::after {
+            content: "";
+            width: 0;
+            height: 1px;
+            background-color: white;
+            display: block;
+            margin-top: 2px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.2s linear;
+        }
+
+        p:hover::after {
+            width: 100%;
+        }
+    }
+
 }

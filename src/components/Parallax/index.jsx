@@ -3,7 +3,7 @@ import styles from './style.module.scss';
 
 export default function Index() {
   return (
-    <main className="main">
+    <main id="home" className="main">
       <Parallax />
       <div className={styles.main_container}>
       </div>

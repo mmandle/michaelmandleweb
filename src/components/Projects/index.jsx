@@ -10,23 +10,27 @@ import Rounded from '../../common/RoundedButton';
 const projects = [
   {
     title: "Omni Athletics",
+    date: "2024",
+    src: "comp.png",
+    color: "#D9C3AF"
+  },
+  {
+    title: "SimpliciTee",
+    date: "2023",
+    src: "comp.png",
+    color: "#fff"
+  },
+  {
+    title: "Creatives Managment",
+    date: "2023",
     src: "comp.png",
     color: "#000000"
   },
   {
-    title: "SimpliciTee",
-    src: "comp.png",
-    color: "#8C8C8C"
-  },
-  {
-    title: "Creatives Managment",
-    src: "comp.png",
-    color: "#EFE8D3"
-  },
-  {
     title: "ProFlix Entertainment",
+    date: "2023",
     src: "comp.png",
-    color: "#706D63"
+    color: "#bf4242"
   }
 ]
 
@@ -79,18 +83,18 @@ export default function Home() {
   return (
   <main onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}} className={styles.projects}>
     <div className={styles.h1}>
-      <h1>Projects.</h1>
+      <h1>Projects. <span className={styles.info}>username: test | password: test1</span></h1>
     </div>
     <div className={styles.body}>
       {
         projects.map( (project, index) => {
-          return <Project index={index} title={project.title} manageModal={manageModal} key={index}/>
+          return <Project index={index} title={project.title} date={project.date} manageModal={manageModal} key={index}/>
         })
       }
     </div>
-    <Rounded>
+    {/* <Rounded>
       <p>About Me.</p>
-    </Rounded>
+    </Rounded> */}
 
     <>
         <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>

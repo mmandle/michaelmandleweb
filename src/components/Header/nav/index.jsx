@@ -3,33 +3,39 @@ import styles from './style.module.scss';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { menuSlide } from '../animation';
-import Link from './Link';
 import Curve from './Curve';
 import Footer from './Footer';
 
 const navItems = [
   {
     title: "Home",
-    href: "/",
+    id: "home",
   },
   {
     title: "Work",
-    href: "/work",
+    id: "work",
   },
   {
     title: "About",
-    href: "/about",
+    id: "about",
   },
   {
     title: "Contact",
-    href: "/contact",
+    id: "contact",
   },
-]
+];
 
 export default function index() {
-
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
+
+  const handleNavItemClick = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setSelectedIndicator(id);
+  };
 
   return (
     <motion.div 
@@ -38,26 +44,29 @@ export default function index() {
       animate="enter" 
       exit="exit" 
       className={styles.menu}
-      >
-       <div className={styles.body}>
-            <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
-                    <div className={styles.header}>
-                        <p>Navigation</p>
-                    </div>
-                    {
-                      navItems.map( (data, index) => {
-                        return <Link 
-                        key={index} 
-                        data={{...data, index}} 
-                        isActive={selectedIndicator == data.href} 
-                        setSelectedIndicator={setSelectedIndicator}>
-                        </Link>
-                      })
-                    }
-            </div>
-            <Footer />
+    >
+      <div className={styles.body}>
+        <div onMouseLeave={() => setSelectedIndicator(pathname)} className={styles.nav}>
+          <div className={styles.header}>
+            <p>Where to?</p>
+          </div>
+          {navItems.map(({ title, id }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavItemClick(id);
+              }}
+              className={selectedIndicator === id ? styles.active : ""}
+            >
+              {title}
+            </a>
+          ))}
         </div>
-        <Curve />
+        <Footer />
+      </div>
+      <Curve />
     </motion.div>
   )
 }

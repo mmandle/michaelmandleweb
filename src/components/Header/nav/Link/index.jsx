@@ -7,6 +7,8 @@ export default function Index({data, isActive, setSelectedIndicator}) {
   
     const { title, href, index} = data;
   
+
+    
     return (
       <motion.div 
         className={styles.link} 

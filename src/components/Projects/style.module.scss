@@ -11,9 +11,17 @@
     color: white;
 
     h1 {
-        margin-right: 67vw;
+        margin-right: 81vw;
         font-size: 5vw;
         font-weight: 300;
+        display: inline;
+
+        .info {
+            color: rgb(177, 175, 175);
+            color: #bf4242;
+            font-size: 2vw;
+        }
+
     }
 
     .body{
