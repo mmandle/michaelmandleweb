@@ -18,21 +18,21 @@ const projects = [
   {
     title: "SimpliciTee",
     date: "2023",
-    src: "comp.png",
+    src: "simMock.png",
     color: "#fff",
     url: "storefront-ten-gamma.vercel.app/"
   },
   {
     title: "Creatives Managment",
     date: "2023",
-    src: "comp.png",
+    src: "manMock.png",
     color: "#000000",
     url: "e-commerce-sigma-lilac.vercel.app/0bc85b94-55d1-4a80-ae0d-ea846becc97d"
   },
   {
     title: "ProFlix Entertainment",
     date: "2023",
-    src: "comp.png",
+    src: "mockMovie.png",
     color: "#bf4242",
     url: "github.com/mmandle/mock-movie"
   }

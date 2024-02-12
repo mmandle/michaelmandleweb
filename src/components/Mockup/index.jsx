@@ -10,17 +10,17 @@ export default function index() {
         <Image
         
           className={styles.img}
-          src={`/images/comp.png`}
-          width={1200}
+          src={`/images/simMock.png`}
+          width={1000}
           height={600}
           alt="image"
           draggable="false"
         />
         <div className={styles.text}>
           <div className={styles.h3Inline}>
-            <h3 className={styles.h3}> <span>2023</span><span> HTML - CSS - JSX </span></h3>
+            <h3 className={styles.h3}> <span>2023</span><span> NEXT - TSX - TAILWIND </span></h3>
           </div>
-          <h2 className={styles.h2}>OMNI ATHLETICS</h2>
+          <h2 className={styles.h2}>SIMPLICITEE</h2>
           <h4 className={styles.h4}>WEBDESIGN - FRONTEND DEVELOPMENT</h4>
         </div>
       </div>
