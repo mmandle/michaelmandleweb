@@ -32,7 +32,7 @@ const projects = [
   {
     title: "ProFlix Entertainment",
     date: "2023",
-    src: "mockMovie.png",
+    src: "movieMock.png",
     color: "#bf4242",
     url: "github.com/mmandle/mock-movie"
   }
