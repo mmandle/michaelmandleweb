@@ -12,25 +12,29 @@ const projects = [
     title: "Omni Athletics",
     date: "2024",
     src: "comp.png",
-    color: "#D9C3AF"
+    color: "#D9C3AF",
+    url: "github.com/mmandle/michaelmandleOLD/tree/main/Projects/omnifit"
   },
   {
     title: "SimpliciTee",
     date: "2023",
     src: "comp.png",
-    color: "#fff"
+    color: "#fff",
+    url: "storefront-ten-gamma.vercel.app/"
   },
   {
     title: "Creatives Managment",
     date: "2023",
     src: "comp.png",
-    color: "#000000"
+    color: "#000000",
+    url: "e-commerce-sigma-lilac.vercel.app/0bc85b94-55d1-4a80-ae0d-ea846becc97d"
   },
   {
     title: "ProFlix Entertainment",
     date: "2023",
     src: "comp.png",
-    color: "#bf4242"
+    color: "#bf4242",
+    url: "github.com/mmandle/mock-movie"
   }
 ]
 
@@ -88,7 +92,14 @@ export default function Home() {
     <div className={styles.body}>
       {
         projects.map( (project, index) => {
-          return <Project index={index} title={project.title} date={project.date} manageModal={manageModal} key={index}/>
+          return <Project 
+          index={index} 
+          title={project.title} 
+          date={project.date}
+           manageModal={manageModal}
+            key={index}
+            url={project.url}
+            />
         })
       }
     </div>
