@@ -94,7 +94,7 @@ export default function Index() {
                     Want to work together<span className={styles.questionMark}>?</span>
                 </div>
                 <svg className={styles.svg} width="122" height="100" viewBox="0 0 122 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M111 60L66.8926 78.9513C63.6382 80.3496 58.3618 80.3496 55.1074 78.9513L11 60" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M111 60L66.8926 78.9513C63.6382 80.3496 58.3618 80.3496 55.1074 78.9513L11 60" stroke="white" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
 
 
