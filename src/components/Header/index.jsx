@@ -9,7 +9,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Rounded from '../../common/RoundedButton';
 import Magnetic from '../../common/Magnetic';
 
-export default function index() {
+export default function Index() {
     const header = useRef(null);
     const [isActive, setIsActive] = useState(false);
     const pathname = usePathname();
@@ -32,12 +32,9 @@ export default function index() {
         });
     }, []);
 
-    const handleScrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-            setIsActive(false);
-        }
+    const handleAboutButtonClick = () => {
+        // Show error box
+        alert("Feture coming soon!\nIn the meantime, check out my resume or LinkedIn!");
     };
 
     return (
@@ -59,7 +56,7 @@ export default function index() {
                         </div>
                     </Magnetic>
                     <Magnetic>
-                        <div className={styles.el} onClick={() => handleScrollToSection("about")}>
+                        <div className={styles.el} onClick={() => handleAboutButtonClick()}>
                             <a>About</a>
                             <div className={styles.indicator}></div>
                         </div>
