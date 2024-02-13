@@ -32,8 +32,15 @@ export default function Index() {
         });
     }, []);
 
+    const handleScrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+
     const handleAboutButtonClick = () => {
-        // Show error box
+
         alert("Feture coming soon!\nIn the meantime, check out my resume or LinkedIn!");
     };
 

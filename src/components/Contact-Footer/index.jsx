@@ -27,14 +27,14 @@ export default function Home() {
   };
 
   return (
-    <motion.div id="contact" style={{ y }} ref={container} className={styles.contact}>
+    <motion.div style={{ y }} ref={container} className={styles.contact}>
       <div className={styles.body}>
         <div className={styles.title}>
           <span>
             <h2>Lets talk.</h2>
           </span>
           {/* <h2>together.</h2> */}
-          <motion.div style={{ x }} className={styles.buttonContainer}>
+          <motion.div id="contact" style={{ x }} className={styles.buttonContainer}>
             <Rounded
               backgroundColor={"rgb(109, 109, 95)"}
               className={styles.button}>

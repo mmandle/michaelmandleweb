@@ -20,7 +20,7 @@ const projects = [
     date: "2023",
     src: "simMock.png",
     color: "#fff",
-    url: "storefront-ten-gamma.vercel.app/"
+    url: "https://simplicitee.vercel.app"
   },
   {
     title: "Creatives Managment",

@@ -37,6 +37,7 @@ export default function index() {
     setSelectedIndicator(id);
   };
 
+
   return (
     <motion.div 
       variants={menuSlide} 
