@@ -41,7 +41,7 @@ export default function Index() {
 
     const handleAboutButtonClick = () => {
 
-        alert("Feture coming soon!\nIn the meantime, check out my resume or LinkedIn!");
+        alert("Feature coming soon!\nIn the meantime, check out my resume or LinkedIn!");
     };
 
     return (
