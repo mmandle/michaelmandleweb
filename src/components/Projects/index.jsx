@@ -13,7 +13,7 @@ const projects = [
     date: "2024",
     src: "comp.png",
     color: "#D9C3AF",
-    url: "github.com/mmandle/michaelmandleOLD/tree/main/Projects/omnifit"
+    url: "https://github.com/mmandle/omniOnNext"
   },
   {
     title: "SimpliciTee",
