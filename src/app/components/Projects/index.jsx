@@ -5,7 +5,7 @@ import Project from './components/project';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import gsap from 'gsap';
 import Image from 'next/image';
-import Rounded from '../../common/RoundedButton';
+import Rounded from '../../../common/RoundedButton';
 
 const projects = [
   {
@@ -20,21 +20,21 @@ const projects = [
     date: "2023",
     src: "simMock.png",
     color: "#fff",
-    url: "https://simplicitee.vercel.app"
+    url: "https://storefront-gamma.vercel.app"
   },
   {
-    title: "Creatives Managment",
+    title: "Simpli Managed",
     date: "2023",
     src: "manMock.png",
     color: "#000000",
-    url: "e-commerce-sigma-lilac.vercel.app/0bc85b94-55d1-4a80-ae0d-ea846becc97d"
+    url: "https://admin-self-two.vercel.app/"
   },
   {
-    title: "ProFlix Entertainment",
+    title: "Messenger",
     date: "2023",
-    src: "movieMock.png",
+    src: "messenge.png",
     color: "#bf4242",
-    url: "github.com/mmandle/mock-movie"
+    url: "https://messenger-8fq7mh3yu-michaels-projects-918873a3.vercel.app"
   }
 ]
 

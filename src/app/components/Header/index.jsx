@@ -6,8 +6,8 @@ import { AnimatePresence } from 'framer-motion';
 import Nav from './nav';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Rounded from '../../common/RoundedButton';
-import Magnetic from '../../common/Magnetic';
+import Rounded from '../../../common/RoundedButton';
+import Magnetic from '../../../common/Magnetic';
 
 export default function Index() {
     const header = useRef(null);
