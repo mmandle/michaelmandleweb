@@ -5,7 +5,7 @@ export default function index() {
   return (
     <div id="work" className={styles.main}>
       <div className={styles.content}>
-        <a href="https://simplicitee.vercel.app" target="_blank" rel="noopener noreferrer">
+        <a href="https://storefront-gamma.vercel.app" target="_blank" rel="noopener noreferrer">
           <Image
             className={styles.img}
             src={`/images/simMock.png`}
