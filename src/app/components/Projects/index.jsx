@@ -9,6 +9,13 @@ import Rounded from '../../../common/RoundedButton';
 
 const projects = [
   {
+    title: "Techport Thirteen",
+    date: "2024",
+    src: "tp13.png",
+    color: "#3b82f6",
+    url: "https://tp-onethree.vercel.app"
+  },
+  {
     title: "Omni Athletics",
     date: "2024",
     src: "comp.png",
