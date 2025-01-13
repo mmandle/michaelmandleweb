@@ -9,6 +9,20 @@ import Rounded from '../../../common/RoundedButton';
 
 const projects = [
   {
+    title: "The Mandle Wedding",
+    date: "2025",
+    src: "wedding.png",
+    color: "rgb(212,181,120)",
+    url: "https://themandlewedding.com"
+  },
+  {
+    title: "Fresh'n Up",
+    date: "2025",
+    src: "fresh.png",
+    color: "rgb(126,118,108)",
+    url: "https://freshnup.vercel.app"
+  },
+  {
     title: "Techport Thirteen",
     date: "2024",
     src: "tp13.png",
